@@ -4,9 +4,9 @@ public class Cliente {
     private CuentaCorriente cCorriente;
     private CajaDeAhorro cDeAhorro;
 
-    public Cliente(){
-        cCorriente = new CuentaCorriente();
-        cDeAhorro = new CajaDeAhorro();
+    public Cliente(Double saldoInicial){
+        cCorriente = new CuentaCorriente(0.00);
+        cDeAhorro = new CajaDeAhorro(saldoInicial);
     }
 
     public CuentaCorriente getcCorriente() {
